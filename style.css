@@ -1,0 +1,208 @@
+/* Paleta Refinada: Azul Cielo (#B3E5FC), Lavanda (#E1BEE7), Crema (#FFF9C4) */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #455A64;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%; /* Un poco más angosto */
+    background-color: #B3E5FC; /* Cambiado de Verde a Azul Cielo */
+    border-bottom: 2px solid #81D4FA;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem; /* Tamaño mediano solicitado */
+    color: #0277BD;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #01579B;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 50vh; /* Un poco más corta */
+    background: linear-gradient(135deg, #E1BEE7 0%, #FFF9C4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.8rem; /* Ajustado */
+    color: #4A148C;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #7E57C2;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0277BD; /* Cambia a azul al pasar el mouse */
+    transform: translateY(-2px);
+}
+
+/* Sección Confianza */
+.features {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #B3E5FC; /* Borde azul suave */
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #E1BEE7; /* Footer Lavanda para cerrar el diseño */
+    color: #4A148C;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+
+/*combos.html*/
+
+/* Estilos para la Página de Combos */
+.combos-container {
+    padding: 40px 5%;
+    background-color: #fff;
+}
+
+.combos-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid-combos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-combo {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #FFF9C4; /* Borde crema */
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.card-combo:hover {
+    transform: translateY(-10px);
+    border-color: #E1BEE7;
+    box-shadow: 0 10px 20px rgba(126, 87, 194, 0.1);
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-style: italic;
+}
+
+.info-combo {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.info-combo h3 {
+    color: #4A148C;
+    margin-bottom: 10px;
+}
+
+.info-combo ul {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #607D8B;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+.precio {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0277BD;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+/*centrar la imagen */
+
+.img-combo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Esto hace que la imagen se adapte sin deformarse */
+    border-bottom: 2px solid #FFF9C4;
+}
